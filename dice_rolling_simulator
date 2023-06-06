@@ -1,0 +1,16 @@
+import random
+
+def roll_dice():
+    dice1 = random.randint(1, 6)
+    dice2 = random.randint(1, 6)
+    return dice1, dice2
+
+def main():
+    roll_count = int(input("How many times do you want to roll the dice? "))
+
+    for _ in range(roll_count):
+        dice1, dice2 = roll_dice()
+        print(f"Dice 1: {dice1}   Dice 2: {dice2}")
+
+if __name__ == "__main__":
+    main()
